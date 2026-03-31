@@ -1,0 +1,9 @@
+sourcecode:
+  type: git
+  location:
+    origin: REPLACE_WITH_REPO_URL
+    commit_sha: REPLACE_WITH_COMMITTED_SHA
+
+short_description: Send a raw IR carrier burst with adjustable frequency and duty cycle.
+description: "@README.md"
+changelog: "@changelog.md"
