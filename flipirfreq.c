@@ -25,7 +25,7 @@
 #define FLIPIRFREQ_MAX_DUTY_CYCLE 99U
 #define FLIPIRFREQ_MIN_BURST_MS 1U
 #define FLIPIRFREQ_MAX_BURST_MS 5000U
-#define FLIPIRFREQ_VISIBLE_ROWS 5U
+#define FLIPIRFREQ_VISIBLE_ROWS 4U
 #define FLIPIRFREQ_ROW_HEIGHT 9
 
 typedef enum {
@@ -544,19 +544,19 @@ static void flipirfreq_ensure_selection_visible(FlipIRFreqApp* app) {
 static const char* flipirfreq_field_label(FlipIRFreqField field) {
     switch(field) {
     case FlipIRFreqFieldFrequency:
-        return "Freq";
+        return "Frequency";
     case FlipIRFreqFieldDutyCycle:
-        return "Duty";
+        return "Duty Cycle";
     case FlipIRFreqFieldBurst:
-        return "Burst";
+        return "Burst Time";
     case FlipIRFreqFieldSignal:
-        return "Sig";
+        return "Signal Type";
     case FlipIRFreqFieldMode:
-        return "Mode";
+        return "Tx Mode";
     case FlipIRFreqFieldOutput:
-        return "Out";
+        return "IR Output";
     case FlipIRFreqFieldSend:
-        return "Send";
+        return "Transmit";
     default:
         return "?";
     }
@@ -668,8 +668,11 @@ static void flipirfreq_draw_callback(Canvas* canvas, void* context) {
         canvas_draw_str(canvas, 120, 16, "^");
     }
     if((app->scroll_offset + FLIPIRFREQ_VISIBLE_ROWS) < FlipIRFreqFieldCount) {
-        canvas_draw_str(canvas, 120, 63, "v");
+        canvas_draw_str(canvas, 120, 53, "v");
     }
+
+    canvas_draw_line(canvas, 2, 54, 126, 54);
+    canvas_draw_str(canvas, 2, 62, "By ConsultingJoe.com");
 }
 
 static void flipirfreq_input_callback(InputEvent* input_event, void* context) {

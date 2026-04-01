@@ -27,27 +27,42 @@ FlipIRFreq is a Flipper Zero external app for sending either a high-frequency IR
 - Dedicated on-screen `Send` action
 - Live `TX` animation while broadcasting
 - Scrollable menu so the UI stays readable on the Flipper display
+- Footer attribution matching the rest of the Flip app family
 - Settings are persisted across launches
 - Single-screen workflow optimized for quick testing and experimentation
+
+## Screenshots
+
+### Main Screen
+
+![Main screen](Screenshots/Main.png)
+
+### Pulse Mode
+
+![Pulse mode screen](Screenshots/Pulse%20Mode.png)
+
+### Send Screen
+
+![Send screen](Screenshots/Send%20Screen.png)
 
 ## Menu Fields
 
 The app exposes the following fields:
 
-- `Freq`
+- `Frequency`
   - In `Carrier` mode this is the carrier frequency in Hz
   - In `Pulse` mode this is the pulse rate in tenths of a hertz, shown like `10.5 Hz`
-- `Duty`
+- `Duty Cycle`
   - Output duty cycle percentage
-- `Burst`
-  - Timed transmit length used when `Mode` is set to `Burst`
-- `Sig`
+- `Burst Time`
+  - Timed transmit length used when `Tx Mode` is set to `Burst`
+- `Signal Type`
   - Signal path: `CARR` or `PULSE`
-- `Mode`
+- `Tx Mode`
   - Transmit style: `BURST` or `CONT`
-- `Out`
+- `IR Output`
   - Output routing: `AUTO`, `INT`, or `EXT`
-- `Send`
+- `Transmit`
   - Starts transmission
   - Changes to `STOP` while transmitting
 
