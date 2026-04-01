@@ -33,17 +33,15 @@ FlipIRFreq is a Flipper Zero external app for sending either a high-frequency IR
 
 ## Screenshots
 
-### Main Screen
+| Main | Pulse Mode |
+| --- | --- |
+| ![Main screen](Screenshots/Main.png) | ![Pulse mode screen](Screenshots/Pulse%20Mode.png) |
+| Main control screen for carrier transmission setup. | Pulse mode configured for low-frequency IR pulsing. |
 
-![Main screen](Screenshots/Main.png)
-
-### Pulse Mode
-
-![Pulse mode screen](Screenshots/Pulse%20Mode.png)
-
-### Send Screen
-
-![Send screen](Screenshots/Send%20Screen.png)
+| Send Screen |  |
+| --- | --- |
+| ![Send screen](Screenshots/Send%20Screen.png) |  |
+| Transmit action selected and ready to start or stop output. |  |
 
 ## Menu Fields
 
