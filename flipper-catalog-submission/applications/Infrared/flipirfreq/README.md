@@ -6,7 +6,7 @@ Copy `manifest.yml` from this folder into your fork of:
 
 at:
 
-`applications/Tools/flipirfreq/manifest.yml`
+`applications/Infrared/flipirfreq/manifest.yml`
 
 Before opening the PR:
 
