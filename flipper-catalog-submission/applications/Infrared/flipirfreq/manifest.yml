@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jsammarco/FlipIRFreq.git
-    commit_sha: e6065d8bd9c068349d13c6162df5950270d0dba5
+    commit_sha: c5c62db75fc6556a2e2301fd7a7169982e32cc01
 
 short_description: Send IR in carrier or low-frequency pulse modes with adjustable frequency, duty cycle, and output.
 description: "@README.md"
