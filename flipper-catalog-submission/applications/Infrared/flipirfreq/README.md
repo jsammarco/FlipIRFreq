@@ -1,4 +1,4 @@
-# FlipIRFreq Catalog Submission
+## FlipIRFreq Catalog Submission
 
 Copy `manifest.yml` from this folder into your fork of:
 
